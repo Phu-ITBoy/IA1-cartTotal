@@ -1,6 +1,12 @@
 # Student handoff checklist
 
-The implementation and local evidence are prepared. Complete these steps yourself before submission so every claim remains honest.
+The implementation, personal GitHub remote, and hosted CI evidence are prepared. Complete the remaining personal steps before submission so every claim remains honest.
+
+Completed on 2026-10-06:
+
+- `origin` was connected to `https://github.com/Phu-ITBoy/IA1-cartTotal.git`.
+- `main` was pushed without changing the official `upstream` remote.
+- GitHub Actions run `37479392645` passed for commit `3c3557e`.
 
 ## 1. Read and understand every change
 
@@ -24,29 +30,21 @@ Be ready to explain:
 
 If you make any correction yourself, test it and record it accurately in `AI-LOG.md`.
 
-## 2. Create and connect your personal GitHub repository
+## 2. Confirm the two Git remotes
 
-The official starter is preserved as `upstream`. Confirm it:
+The official starter is preserved as `upstream`, and your repository is `origin`. Confirm both:
 
 ```powershell
 git remote -v
-```
-
-On GitHub, create a new empty repository under your own account. Do not initialize it with a README, license, or `.gitignore`. Then run, replacing the placeholder with your repository URL:
-
-```powershell
-git remote add origin <YOUR_REPOSITORY_URL>
-git remote -v
-git push -u origin main
 ```
 
 Do not push changes back to `upstream`.
 
-## 3. Verify hosted CI
+## 3. Re-check hosted CI after any later push
 
-Open the **Actions** tab of your personal repository and confirm the latest `CI` workflow is green. If it fails, inspect the log, fix the cause, run `npm test` and `npm run lint` locally, commit, and push again.
+Open the **Actions** tab of your personal repository and confirm the latest `CI` workflow is green. The first published run is already green, so the Harness claim is now 20/20. If a later run fails, inspect the log, fix the cause, run `npm test` and `npm run lint` locally, commit, and push again.
 
-Only after a green hosted run may you increase the Harness claim from 16/20 to 20/20.
+GitHub Actions: `https://github.com/Phu-ITBoy/IA1-cartTotal/actions`
 
 ## 4. Update the honest evidence
 

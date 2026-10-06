@@ -26,3 +26,12 @@
 - **Changed:** Codex used the student's full name shown in Classroom and tied each claimed score to concrete files, tests, commands, and commits. No student-authored revision has been made yet.
 - **Rejected:** Claiming hosted CI evidence before a personal repository is pushed, claiming a completed personal review that has not happened, storing secrets, or submitting to Classroom without the student's final review.
 - **By hand:** The student logged in to Classroom and authorized access to the supplied course links. Codex prepared the local evidence. The student must complete the review, GitHub publication/CI check, any honest log updates, and the final Classroom upload.
+
+## 2026-10-06 — GitHub publication and hosted CI
+
+- **Tool:** OpenAI Codex desktop app and GitHub Actions
+- **Asked for:** Continue with the next possible steps after the student created `https://github.com/Phu-ITBoy/IA1-cartTotal`.
+- **Kept:** The official starter remote as `upstream`, the student's repository as `origin`, the `main` branch, and the existing CI workflow.
+- **Changed:** Codex added `origin`, pushed `main`, verified GitHub Actions run `37479392645` completed successfully for commit `3c3557e`, and updated the evidence-based Harness score from 16/20 to 20/20.
+- **Rejected:** Force-pushing, pushing to the official starter repository, claiming that the student personally reviewed the code, or submitting to Classroom automatically.
+- **By hand:** The student created the empty personal GitHub repository and asked Codex to continue. Codex ran the local gates, configured the remotes, pushed, and checked the hosted CI result. The student's personal code review and Classroom submission remain incomplete.
