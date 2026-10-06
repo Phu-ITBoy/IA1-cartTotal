@@ -1,5 +1,7 @@
 # cart — session 2 starter
 
+Repository: https://github.com/Phu-ITBoy/IA1-cartTotal
+
 Run the test first and watch it fail:
 
 ```bash
