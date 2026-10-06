@@ -52,23 +52,23 @@ Expected: FAIL in `the example from the slides` because `src/cart.js` throws `Er
 
 Name Node.js 24 and ES modules, list `npm test` and `npm run lint`, restrict implementation to `src/cart.js` and tests to `test/cart.test.js`, require reading diffs before gates, and include explicit rules to never add dependencies and never use `toFixed()` for the result.
 
-- [ ] **Step 3: Write `BRIEF.md`**
-
-State the allowed files, exact `cartTotal(items, options)` contract, worked value `467400`, empty-cart behavior, shipping threshold, both `RangeError` categories, numeric whole-dong result, required independent tests, and no-dependencies constraint.
-
-- [ ] **Step 4: Add the lint gate to `package.json`**
+- [ ] **Step 3: Add the lint gate to `package.json`**
 
 Add script `"lint": "node --check src/cart.js && node --check test/cart.test.js"` without changing the existing test command.
 
-- [ ] **Step 5: Add `.github/workflows/ci.yml`**
+- [ ] **Step 4: Add `.github/workflows/ci.yml`**
 
 On pushes and pull requests, use `actions/checkout@v4`, `actions/setup-node@v4` with Node `24`, then run `npm run lint` and `npm test`. Do not run `npm install` because the project has no dependencies.
 
-- [ ] **Step 6: Verify the harness syntax gate**
+- [ ] **Step 5: Verify the harness syntax gate**
 
 Run: `npm run lint`
 
 Expected: PASS with exit code `0`.
+
+- [ ] **Step 6: Write `BRIEF.md` after the harness is established**
+
+State the allowed files, exact `cartTotal(items, options)` contract, worked value `467400`, empty-cart behavior, shipping threshold, both `RangeError` categories, numeric whole-dong result, required independent tests, and no-dependencies constraint.
 
 - [ ] **Step 7: Commit**
 
@@ -189,11 +189,11 @@ Expected: `git remote -v` lists `upstream` for the official starter URL and no p
 
 - [ ] **Step 2: Write `AI-LOG.md` from the recorded work**
 
-Identify Codex, the user's supplied artifact/rubric/student ID, generated code and files, the rejected dependency and `toFixed()` approaches, automated checks performed, and the fact that student review or handwritten edits have not yet occurred. Do not fabricate personal work.
+Write separate dated entries for the harness/brief, tests/implementation, and submission documentation. Each entry uses the exact Classroom fields `Tool`, `Asked for`, `Kept`, `Changed`, `Rejected`, and `By hand`. Identify Codex, the user's supplied artifact/rubric/student ID, generated code and files, the rejected dependency and `toFixed()` approaches, automated checks performed, and the fact that student review or handwritten edits have not yet occurred. Do not fabricate personal work.
 
 - [ ] **Step 3: Write `SELF_ASSESSMENT_REPORT.md`**
 
-Create one row per rubric criterion with file/test/commit evidence and claim: behavior `30/30`, tests `20/20`, harness `16/20` until hosted CI is green, brief `15/15`, and AI log `12/15` until personal review is added. State total `93/100` and list hosted CI, personal review, repository publication, and submission as not yet completed.
+Use the heading `Self-assessment - IA#1`, identify `24127493 - Phú Văn Viết Minh`, state the claimed total, and create one row per rubric criterion with file/test/commit evidence. Claim: behavior `30/30`, tests `20/20`, harness `16/20` until hosted CI is green, brief `15/15`, and AI log `12/15` until personal review is added. State total `93/100`, then add `What I did not manage` and `What I would do differently` sections covering hosted CI, personal review, repository publication, and submission.
 
 - [ ] **Step 4: Write `STUDENT_TODO.md`**
 

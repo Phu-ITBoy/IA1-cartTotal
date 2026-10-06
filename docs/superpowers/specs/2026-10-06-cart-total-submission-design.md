@@ -11,9 +11,11 @@ and make every remaining student-only action explicit.
 ## Sources of truth
 
 The implementation is governed by the starter `README.md`, session 2 slides,
-and the four-page `IA#1 - cartTotal with a harness` rubric stored next to this
-repository. If prose added during the work conflicts with those sources, the
-starter contract and rubric take precedence.
+the four-page `IA#1 - cartTotal with a harness` rubric stored next to this
+repository, and the Classroom AI-log and self-assessment templates. The course
+syllabus supplies the disclosure and file-naming rules. If prose added during
+the work conflicts with those sources, the starter contract, rubric, and
+Classroom templates take precedence.
 
 ## Functional contract
 
@@ -74,12 +76,14 @@ run cannot be claimed until the student pushes the repository to GitHub.
 - `BRIEF.md` records the implementation brief before product code is changed.
   It names the allowed files, contract, error cases, test expectations, and
   the no-dependencies constraint.
-- `AI-LOG.md` truthfully identifies Codex, the student's request, generated
-  files, review findings, rejected alternatives, and any work performed by
-  hand. It must not claim that the student reviewed or edited something unless
-  the student actually did so.
-- `SELF_ASSESSMENT_REPORT.md` contains one evidence-backed row per rubric
-  criterion and a short section describing what was not completed.
+- `AI-LOG.md` contains one entry per assistant-aided task and follows the
+  Classroom entry format: date/task, `Tool`, `Asked for`, `Kept`, `Changed`,
+  `Rejected`, and `By hand`. It truthfully identifies
+  generated files and review findings and must not claim that the student
+  reviewed or edited something unless the student actually did so.
+- `SELF_ASSESSMENT_REPORT.md` identifies `24127493 - Phú Văn Viết Minh`, states
+  the claimed total, and contains one evidence-backed row per rubric criterion.
+  It ends with `What I did not manage` and `What I would do differently`.
 - `STUDENT_TODO.md` lists the actions that require the student's own account,
   judgment, or submission authority.
 
