@@ -39,3 +39,11 @@ Kept: The implementation, tests, rules file, brief, evidence, repository URL, an
 Changed: No student-authored revision was made. Codex changed each AI log entry to the exact six-label format and changed the self-assessment heading, identity line, table headings, and prose sections to match the template.
 Rejected: Claiming 100/100 before the student performs a personal review, inventing handwritten work, or changing already-correct application code only to create activity.
 By hand: The student supplied the template text and requested exact formatting. No file edit was made by the student; the student must still read every diff and be able to explain every submitted line.
+
+## 2026-10-07 — final submission cleanup
+Tool: OpenAI Codex desktop app.
+Asked for: Remove files that are useful only for internal planning or student handoff and keep the submitted repository focused on the assignment requirements.
+Kept: The implementation, tests, rules file, brief, AI log, self-assessment, README, package configuration, `.gitignore`, and CI workflow.
+Changed: Codex removed `STUDENT_TODO.md` and `docs/superpowers/` from the tracked repository, and moved the personal review PDF outside the repository so it will not enter the submission archive.
+Rejected: Rewriting published commit history, deleting required assignment evidence, or adding the personal review PDF to the repository and final ZIP.
+By hand: The student reviewed the repository contents, identified the two unnecessary tracked areas, and requested their removal. No project file was edited by the student in this cleanup task.
