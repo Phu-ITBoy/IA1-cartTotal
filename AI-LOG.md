@@ -55,3 +55,11 @@ Kept: The existing `cartTotal` implementation, ten contract tests, harness, brie
 Changed: Codex translated and summarised `README.md` and `BRIEF.md`, explained the implementation and tests block by block, clarified the meaning of Git history versus a diff, and revised this log to record the completed personal review accurately.
 Rejected: Claiming that the student personally wrote AI-generated source code, hiding Codex's contribution, treating green tests as a substitute for understanding, and changing correct code without a requirement were rejected.
 By hand: The student personally read `README.md`, `BRIEF.md`, `AGENTS.md`, `src/cart.js`, `test/cart.test.js`, `package.json`, `.github/workflows/ci.yml`, `AI-LOG.md`, `SELF_ASSESSMENT_REPORT.md`, and the relevant commit diffs. The student traced the `467400` worked example, checked the empty-cart path, price and quantity validation, VAT and shipping calculations, final `Math.round()`, and the purpose of all ten tests. The student confirms understanding of the solution from the original requirement through the final verification and submission evidence, while accurately acknowledging that Codex generated the code changes.
+
+## 2026-10-08 — identity correction and package refresh
+Tool: OpenAI Codex desktop app, Git, and PowerShell ZIP verification.
+Asked for: Investigate the incorrectly ordered student name shown in the self-assessment, correct it to `Văn Viết Minh Phú`, publish the correction, and rebuild the final submission archive.
+Kept: Student ID 24127493, the evidence-based score of 97/100, all rubric claims, implementation files, tests, and repository history.
+Changed: Codex searched the repository for both name forms, confirmed that the incorrect form occurred only in `SELF_ASSESSMENT_REPORT.md`, corrected that identity line, and refreshed the submission package after verification.
+Rejected: Changing the score, altering application code, rewriting Git history, or editing unrelated evidence was rejected because the issue was limited to the student's name.
+By hand: The student noticed the mismatch in the rendered report, supplied the authoritative full name `Văn Viết Minh Phú`, and requested the correction.

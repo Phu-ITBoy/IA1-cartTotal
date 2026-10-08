@@ -1,6 +1,6 @@
 # Self-assessment — IA#1
 
-Submitted by: 24127493 — Phú Văn Viết Minh
+Submitted by: 24127493 — Văn Viết Minh Phú
 
 Total I claim: 97 / 100
 
