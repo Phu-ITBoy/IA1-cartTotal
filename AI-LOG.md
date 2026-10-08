@@ -63,3 +63,11 @@ Kept: Student ID 24127493, the evidence-based score of 97/100, all rubric claims
 Changed: Codex searched the repository for both name forms, confirmed that the incorrect form occurred only in `SELF_ASSESSMENT_REPORT.md`, corrected that identity line, and refreshed the submission package after verification.
 Rejected: Changing the score, altering application code, rewriting Git history, or editing unrelated evidence was rejected because the issue was limited to the student's name.
 By hand: The student noticed the mismatch in the rendered report, supplied the authoritative full name `Văn Viết Minh Phú`, and requested the correction.
+
+## 2026-10-08 — rubric audit and concept review
+Tool: OpenAI Codex desktop app, Node.js test runner, Git, GitHub Actions, and PowerShell ZIP verification.
+Asked for: Audit the repository and submission package against every rubric criterion, remove the unnecessary pending-Classroom-submission statement from the self-assessment, and explain the implementation and test concepts the student may be asked about.
+Kept: The evidence-based score of 97/100, all five rubric claims, the implementation, ten contract tests, harness, brief, repository history, and honest disclosure of Codex's contribution.
+Changed: Codex verified the complete rubric against the current repository, confirmed the local gates and hosted CI, removed only the sentence about the ZIP not yet being submitted, and refreshed the final package so it remains consistent with the repository.
+Rejected: Inflating the score, hiding AI assistance, changing already-correct application code, or treating submission timing as work the student failed to complete was rejected.
+By hand: The student identified that Classroom submission is their own deadline-controlled action, requested removal of that unnecessary statement, and asked for explanations of the validation, shipping, rounding, and test decisions so they can present the work themselves.

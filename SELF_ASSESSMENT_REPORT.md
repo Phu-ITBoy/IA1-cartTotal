@@ -14,7 +14,7 @@ Total I claim: 97 / 100
 
 ## What I did not manage
 
-I did not write the production or test code by hand; Codex generated those changes under the constraints and acceptance criteria I supplied. I completed a personal review of the requirements, source, tests, harness, and relevant diffs on 2026-10-08 and can explain the validation, calculation, shipping, rounding, and test decisions. I have not submitted the final ZIP to Google Classroom.
+I did not write the production or test code by hand; Codex generated those changes under the constraints and acceptance criteria I supplied. I completed a personal review of the requirements, source, tests, harness, and relevant diffs on 2026-10-08 and can explain the validation, calculation, shipping, rounding, and test decisions.
 
 ## What I would do differently
 
