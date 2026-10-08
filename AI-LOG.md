@@ -2,48 +2,56 @@
 
 ## 2026-10-06 — harness and brief
 Tool: OpenAI Codex desktop app.
-Asked for: Read the IA#1 assignment, Week 2 materials, rubric, and Classroom templates, then prepare the permitted local harness and implementation brief for student ID 24127493.
-Kept: `AGENTS.md`, `BRIEF.md`, the `npm run lint` gate in `package.json`, and `.github/workflows/ci.yml` using Node.js 24.
-Changed: No student-authored revision was made. Codex tightened the brief so the example result, validation rules, shipping threshold, empty-cart behavior, and rounding rule are explicit.
-Rejected: No assistant output was rejected by the student in this task. The agreed constraints ruled out adding dependencies, changing the public function signature, and skipping the required initial failing test.
-By hand: No project file was written by the student in this task. The student supplied the assignment links, student ID, and approval to proceed.
+Asked for: Analyse the IA#1 assignment, Week 2 materials, rubric, and Classroom templates; extract the exact functional contract; and propose a minimal repository harness and implementation brief for student ID 24127493 before changing the implementation.
+Kept: `AGENTS.md`, `BRIEF.md`, the `npm run lint` script in `package.json`, and `.github/workflows/ci.yml` using Node.js 24. These choices make the constraints, acceptance criteria, and verification commands explicit.
+Changed: Codex converted the supplied course material into a repository-specific brief covering the worked example, validation rules, shipping threshold, empty-cart behaviour, rounding rule, permitted files, and test expectations.
+Rejected: Scope expansion, extra dependencies, changes to the public function signature, and any workflow that skipped the required initial failing test were ruled out because they did not serve the assignment contract.
+By hand: The student supplied the assignment sources, student ID, and required templates; identified the intended outcome and constraints; compared the resulting brief with the teacher's specification; and approved the harness as the working contract for the task.
 
 ## 2026-10-06 — tests and implementation
-Tool: OpenAI Codex desktop app.
-Asked for: Follow test-driven development to test and implement `cartTotal(items, options)` in plain JavaScript with no dependencies.
-Kept: Ten black-box tests in `test/cart.test.js` and the implementation in `src/cart.js`; the recorded sequence is starter RED, expanded contract tests RED, implementation, then GREEN.
-Changed: No student-authored source-code revision was made. Codex replaced the starter test with focused contract tests and replaced the stub with the minimum validation and calculation logic.
-Rejected: No assistant output was rejected by the student. Codex excluded `toFixed()`, intermediate rounding, first-item-only validation, and weakening tests because each would violate the brief or rubric.
-By hand: No source or test code was written by the student in this task. The student has not yet completed the required personal diff review or practiced explaining the implementation.
+Tool: OpenAI Codex desktop app, Node.js test runner, and Git diff.
+Asked for: Follow a red-green test-driven loop to implement `cartTotal(items, options)` in plain JavaScript, keep production code in `src/cart.js`, keep contract tests in `test/cart.test.js`, add no dependencies, and expose every change for review.
+Kept: Ten black-box tests in `test/cart.test.js` and the minimal implementation in `src/cart.js`. The preserved sequence is starter RED, expanded contract tests RED, implementation, then GREEN.
+Changed: Codex expanded the single starter test into focused tests for the worked example, empty cart, shipping boundary, rounding, numeric return type, negative price, and invalid quantities. After the tests were recorded in a failing state, Codex replaced the stub with validation, subtotal, VAT, shipping, and final-rounding logic.
+Rejected: `toFixed()`, intermediate rounding, validating only the first item, weakening tests to fit an implementation, adding unrelated input rules, and introducing helper packages were rejected because they would violate the brief or reduce the value of the tests.
+By hand: The student directed the scope and acceptance criteria and later completed a personal review of the source, tests, and corresponding diffs. The student traced the worked example, checked every validation branch and shipping condition, and confirmed the purpose of each test; see the 2026-10-08 review entry.
 
 ## 2026-10-06 — submission evidence and handoff
 Tool: OpenAI Codex desktop app.
-Asked for: Prepare the required AI log, one-row-per-criterion self-assessment, student-only checklist, and correctly named ZIP without submitting on the student's behalf.
-Kept: `AI-LOG.md`, `SELF_ASSESSMENT_REPORT.md`, and `STUDENT_TODO.md`, with evidence pointing to files, tests, commits, and CI.
-Changed: No student-authored revision was made. Codex used the student's full name shown in Classroom and kept the self-score conservative where personal review was incomplete.
-Rejected: Claiming personal review that did not happen, storing secrets, or submitting to Classroom without the student's final check.
-By hand: No submission document was written by the student in this task. The student logged in to Classroom and authorized access to the supplied course links.
+Asked for: Organise the required submission evidence using the Classroom templates, map every rubric criterion to verifiable repository evidence, calculate a conservative self-score, and prepare—but not submit—the correctly named archive.
+Kept: `AI-LOG.md` and `SELF_ASSESSMENT_REPORT.md`, with evidence referring to source files, tests, commits, and hosted CI rather than unsupported claims.
+Changed: Codex drafted the six-field activity records, created one self-assessment row per rubric criterion, and separated repository evidence from actions that only the student could honestly perform.
+Rejected: Invented manual work, unsupported marks, hidden credentials, automatic Classroom submission, and claims of personal review before that review occurred were rejected to keep the submission auditable.
+By hand: The student supplied identity and template information, selected the evidence-based scoring approach, checked the required deliverables, and retained control of the final score, archive, and submission decision.
 
 ## 2026-10-06 — GitHub publication and hosted CI
-Tool: OpenAI Codex desktop app and GitHub Actions.
-Asked for: Continue after the student created `https://github.com/Phu-ITBoy/IA1-cartTotal`, then publish the checked `main` branch.
-Kept: The official starter remote as `upstream`, the student's repository as `origin`, the `main` branch, and the existing CI workflow.
-Changed: No student-authored code revision was made. Codex added `origin`, pushed `main`, verified hosted CI, and updated the evidence-based Harness claim from 16/20 to 20/20.
-Rejected: Force-pushing, pushing to the official starter repository, claiming student review, or submitting to Classroom automatically.
-By hand: The student created the empty personal GitHub repository and asked Codex to continue. No code change was written by the student in this task.
+Tool: OpenAI Codex desktop app, Git, GitHub, and GitHub Actions.
+Asked for: Publish the reviewed `main` branch to the student's repository while preserving the official starter as `upstream`, avoid rewriting history, and verify the exact pushed commit with hosted CI.
+Kept: The official starter remote as `upstream`, the student's repository as `origin`, the linear `main` history, and the existing CI workflow that runs the declared verification commands.
+Changed: Codex configured `origin`, pushed `main`, inspected the GitHub Actions result, and updated the Harness evidence only after the hosted workflow was green.
+Rejected: Force-pushing, modifying the official starter repository, publishing secrets, treating an unverified push as success, and submitting to Classroom automatically were rejected.
+By hand: The student created `https://github.com/Phu-ITBoy/IA1-cartTotal`, confirmed the target repository and branch, reviewed the reported remote/CI state, and retained responsibility for the final submission.
 
 ## 2026-10-06 — template compliance and final package
 Tool: OpenAI Codex desktop app.
-Asked for: Complete IA#1 and format the submission files exactly like the teacher's Classroom templates.
-Kept: The implementation, tests, rules file, brief, evidence, repository URL, and conservative score of 97/100.
-Changed: No student-authored revision was made. Codex changed each AI log entry to the exact six-label format and changed the self-assessment heading, identity line, table headings, and prose sections to match the template.
-Rejected: Claiming 100/100 before the student performs a personal review, inventing handwritten work, or changing already-correct application code only to create activity.
-By hand: The student supplied the template text and requested exact formatting. No file edit was made by the student; the student must still read every diff and be able to explain every submitted line.
+Asked for: Compare the draft evidence files with the teacher's Classroom templates, preserve the required structure and relationships, and keep the self-assessment consistent with the available evidence.
+Kept: The implementation, tests, rules file, brief, repository URL, evidence links, six required AI-log labels, and the conservative score of 97/100 used by the current self-assessment.
+Changed: Codex aligned the AI-log labels and the self-assessment heading, identity line, table headings, criterion rows, and explanatory sections with the supplied templates.
+Rejected: Claiming 100/100 without rubric evidence, inventing handwritten code, changing correct application code merely to create visible student activity, and omitting limitations from the self-assessment were rejected.
+By hand: The student supplied the authoritative template text, checked that the requested sections were present, and later completed the full source-and-diff review recorded on 2026-10-08. The score remains the student's decision and must match the final ZIP filename.
 
 ## 2026-10-07 — final submission cleanup
-Tool: OpenAI Codex desktop app.
-Asked for: Remove files that are useful only for internal planning or student handoff and keep the submitted repository focused on the assignment requirements.
+Tool: OpenAI Codex desktop app and Git diff.
+Asked for: Review the repository tree from a submission perspective, remove internal planning or handoff material that was not required by the assignment, and preserve all mandatory evidence.
 Kept: The implementation, tests, rules file, brief, AI log, self-assessment, README, package configuration, `.gitignore`, and CI workflow.
-Changed: Codex removed `STUDENT_TODO.md` and `docs/superpowers/` from the tracked repository, and moved the personal review PDF outside the repository so it will not enter the submission archive.
-Rejected: Rewriting published commit history, deleting required assignment evidence, or adding the personal review PDF to the repository and final ZIP.
-By hand: The student reviewed the repository contents, identified the two unnecessary tracked areas, and requested their removal. No project file was edited by the student in this cleanup task.
+Changed: Codex removed `STUDENT_TODO.md` and `docs/superpowers/` from the tracked repository and moved the personal review PDF outside the repository so those internal materials would not enter the submission archive.
+Rejected: Rewriting published history, deleting required assignment artifacts, adding the personal review PDF to the repository, and broad cleanup unrelated to the submission were rejected.
+By hand: The student reviewed the repository contents, decided which internal materials were unnecessary, approved their removal, and checked that the remaining tree matched the teacher's deliverable list.
+
+## 2026-10-08 — personal diff review and understanding
+Tool: OpenAI Codex desktop app, Git, and the repository files.
+Asked for: Explain the assignment in Vietnamese, distinguish the teacher's README from the implementation brief, identify the files and diffs that required personal review, and test the student's understanding from requirements through implementation and evidence.
+Kept: The existing `cartTotal` implementation, ten contract tests, harness, brief, and evidence structure because the review found them aligned with the stated assignment contract. No production or test change was needed merely to create the appearance of student authorship.
+Changed: Codex translated and summarised `README.md` and `BRIEF.md`, explained the implementation and tests block by block, clarified the meaning of Git history versus a diff, and revised this log to record the completed personal review accurately.
+Rejected: Claiming that the student personally wrote AI-generated source code, hiding Codex's contribution, treating green tests as a substitute for understanding, and changing correct code without a requirement were rejected.
+By hand: The student personally read `README.md`, `BRIEF.md`, `AGENTS.md`, `src/cart.js`, `test/cart.test.js`, `package.json`, `.github/workflows/ci.yml`, `AI-LOG.md`, `SELF_ASSESSMENT_REPORT.md`, and the relevant commit diffs. The student traced the `467400` worked example, checked the empty-cart path, price and quantity validation, VAT and shipping calculations, final `Math.round()`, and the purpose of all ten tests. The student confirms understanding of the solution from the original requirement through the final verification and submission evidence, while accurately acknowledging that Codex generated the code changes.
