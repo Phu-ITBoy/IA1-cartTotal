@@ -2,6 +2,8 @@
 
 Submitted by: 24127493 — Văn Viết Minh Phú
 
+Repository: https://github.com/Phu-ITBoy/IA1-cartTotal
+
 Total I claim: 97 / 100
 
 | Criterion | Max | I claim | Evidence |

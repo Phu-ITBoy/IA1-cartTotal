@@ -71,3 +71,11 @@ Kept: The evidence-based score of 97/100, all five rubric claims, the implementa
 Changed: Codex verified the complete rubric against the current repository, confirmed the local gates and hosted CI, removed only the sentence about the ZIP not yet being submitted, and refreshed the final package so it remains consistent with the repository.
 Rejected: Inflating the score, hiding AI assistance, changing already-correct application code, or treating submission timing as work the student failed to complete was rejected.
 By hand: The student identified that Classroom submission is their own deadline-controlled action, requested removal of that unnecessary statement, and asked for explanations of the validation, shipping, rounding, and test decisions so they can present the work themselves.
+
+## 2026-10-10 — repository link in self-assessment
+Tool: OpenAI Codex desktop app, Git, and PowerShell ZIP verification.
+Asked for: Copy the authoritative repository URL from `README.md` into `SELF_ASSESSMENT_REPORT.md`, publish the documentation update to `main`, and rebuild the final submission archive.
+Kept: The student identity, score of 97/100, rubric evidence, implementation, tests, and existing repository URL.
+Changed: Codex added a `Repository:` line below the student identity in `SELF_ASSESSMENT_REPORT.md`, committed and pushed the documentation update to `main`, and refreshed the final submission archive after verification.
+Rejected: Changing the URL, score, rubric claims, application code, or unrelated documentation was rejected because the requested change was only an evidence cross-reference.
+By hand: The student noticed that the self-assessment did not display the repository URL, identified `README.md` as the authoritative source, requested that the same link be added for clarity, and explicitly requested publication and a fresh archive.
